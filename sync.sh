@@ -3,6 +3,9 @@ cd "$(dirname "$0")"
 git pull
 function doIt() {
 	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "sync.sh" --exclude "README.md" -av . ~
+	cd subl
+	rsync -av . ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/
+	cd ..
 }
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
 	doIt

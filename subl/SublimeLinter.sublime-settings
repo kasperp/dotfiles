@@ -1,0 +1,30 @@
+{
+  "jshint_options":
+  {
+    "evil": true,
+    "regexdash": true,
+    "browser": true,
+    "wsh": true,
+    "trailing": true,
+    "sub": true,
+    "expr" : true,
+    "laxcomma" : true,
+    "node" : true,
+    "es5" : true,
+    "browser" : true,
+    "strict" : true,
+
+    "globals": {
+      "jasmine": false,
+      "spyOn": false,
+      "it": false,
+      "console": false,
+      "describe": false,
+      "expect": false,
+      "beforeEach": false,
+      "waits": false,
+      "waitsFor": false,
+      "runs": false
+    }
+  }
+}
