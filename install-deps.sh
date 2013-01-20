@@ -27,3 +27,10 @@ chmod +x ~/code/z/z.sh
 
 # add this to the bash_profile file if it aint there.
 #   . ~/code/z/z.sh
+
+# install source code pro font - thx to https://github.com/klaustopher/old-dotfiles/blob/master/script/bootstrap
+curl -L "https://github.com/downloads/adobe/Source-Code-Pro/SourceCodePro_FontsOnly-1.009.zip">/tmp/adobe-sourcecode.zip
+unzip -qq -j -d /tmp /tmp/adobe-sourcecode.zip "*.ttf"
+sudo mv /tmp/SourceCodePro-*.ttf /Library/Fonts
+rm /tmp/adobe-sourcecode.zip
+echo " + SourceCode Pro Font was installed"
