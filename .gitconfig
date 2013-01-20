@@ -12,7 +12,6 @@
 [core]
 	excludesfile = ~/.gitignore
 	attributesfile = ~/.gitattributes
-	whitespace = fix,space-before-tab,tab-in-indent,trailing-space
 	autocrlf = true
 	editor = vi
 [color "branch"]
