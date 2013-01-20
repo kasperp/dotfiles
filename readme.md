@@ -1,8 +1,10 @@
-# Paul's dotfiles.
+# Kasper's dotfiles.
 
-[mathias's readme](https://github.com/mathiasbynens/dotfiles/) is awesome. go read it.
 
-This repo is mostly for me but you're welcome to make suggestions. Mathias's is the project to fork.  I'm mostly catching up to him, @cowboy, and @gf3.
+Forked of [Paul's dotfiles](https://github.com/paulirish/dotfiles/), forked of
+[mathias's dotfiles](https://github.com/mathiasbynens/dotfiles/). go there instead.
+
+This repo is mostly for me but you're welcome to make suggestions. Paul's or Mathias's are the projects to fork.
 
 ## install the neccessary apps
 
@@ -20,10 +22,13 @@ I do something nice with my `PATH` there:
 PATH=$PATH:/opt/local/sbin
 PATH=$PATH:/bin
 PATH=$PATH:~/.rvm/bin
-PATH=$PATH:~/code/git-friendly
 # ...
 
 export PATH
+
+# git user setup
+git config --global user.name "Me"
+git config --global user.email "me@somewhere.com"
 ```
 
 ## Syntax highlighting
@@ -41,14 +46,6 @@ When setting up a new Mac, you may want to set some sensible OS X defaults:
 ./.osx
 ```
 
-## Similar projects
-
-I recommend getting a [`.jshintrc`](https://github.com/jshint/node-jshint/blob/master/.jshintrc) and [`.editorconfig`](http://editorconfig.org/) defined for all your projects.
-
-
-
-
-
 ## overview of files
 
 ####  Automatic config
@@ -63,6 +60,12 @@ I recommend getting a [`.jshintrc`](https://github.com/jshint/node-jshint/blob/m
 * `.exports`
 * `.functions`
 * `.extra` - not included, explained above
+
+#### Sublime Text 2 settings
+* `subl/Preferences.sublime-settings`
+* `subl/SublimeLinter.sublime-settings`
+
+
 
 #### manual run
 * `install-deps.sh` - random apps i need installed
