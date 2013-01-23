@@ -4,7 +4,8 @@
 Forked of [Paul's dotfiles](https://github.com/paulirish/dotfiles/), forked of
 [mathias's dotfiles](https://github.com/mathiasbynens/dotfiles/). go there instead.
 
-This repo is mostly for me but you're welcome to make suggestions. Paul's or Mathias's are the projects to fork.
+This repo is mostly for me but you're welcome to make suggestions. [Paul's](https://github.com/paulirish/dotfiles/) 
+or [Mathias's]((https://github.com/mathiasbynens/dotfiles/) are the projects to fork.
 
 ## install the neccessary apps
 
