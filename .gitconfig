@@ -12,7 +12,6 @@
 [core]
 	excludesfile = ~/.gitignore
 	attributesfile = ~/.gitattributes
-	autocrlf = true
 	editor = vi
 [color "branch"]
 	current = yellow reverse
@@ -37,4 +36,6 @@
 	prompt = false
 	keepBackup = false
 [mergetool "p4merge"]
-	path = /usr/local/bin/p4merge
+  path = /usr/local/bin/p4merge
+[credential]
+    helper = osxkeychain
