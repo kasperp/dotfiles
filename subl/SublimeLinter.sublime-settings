@@ -2,35 +2,45 @@
   "jshint_options": // See options at http://www.jshint.com/docs/
   {
     "evil": false,
-    "regexdash": true,
-    "browser": true,
-    "wsh": true,
     "trailing": false,
     "sub": true,
-    "devel": true,
     "expr" : true,
     "laxcomma" : true,
-    "node" : true,
     "es5" : true,
-    "browser" : true,
-    "jquery" : true,
     "strict" : true,
+    "indent" : 2,
+    "quotmark" : "single",
+    "camelcase": true,
+    "latedef": true,
+    "immed": true,
+    "camelcase": true,
+    "eqeqeq": true,
+    "unused" : true,
+    "latedef" : true,
+    "noarg": true,
 
-    "predef" : [
-      /* jasmine */
-      "describe",
-      "xdecribe",
-      "beforeEach",
-      "afterEach",
-      "it",
-      "xit",
-      "expect",
-      /* angular */
-      "angular",
-      "module",
-      "inject",
-      /* otherl ibs */
-      "_"
+    /* Environments */
+    "devel": true,
+    "browser": true,
+    "jquery" : true,
+    "node" : true,
+
+
+    "globals" : [
+     /* jasmine */
+     {"describe": true},
+     {"xdecribe":true},
+     {"beforeEach":true},
+     {"afterEach":true},
+     {"it":true},
+     {"xit":true},
+     {"expect": true},
+     /* angular */
+     {"angular":true},
+     {"module":true},
+     {"inject":true},
+     /* other ibs */
+     {"_":true}
     ]
   }
 }
