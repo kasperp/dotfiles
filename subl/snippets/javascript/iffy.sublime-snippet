@@ -1,0 +1,13 @@
+<snippet>
+  <content><![CDATA[
+(function( ${1:args} ){
+  'use strict';
+
+  ${2}
+
+})( window.${1} );
+]]></content>
+  <tabTrigger>iffy</tabTrigger>
+  <description>Immediately Invoked Function Expression</description>
+  <scope>source.js</scope>
+</snippet>
