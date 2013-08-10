@@ -7,7 +7,7 @@ function doIt() {
 
   # sync sublime settings
   cd subl
-  rsync -av . ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/
+  rsync -av . ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
   cd ..
 }
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
