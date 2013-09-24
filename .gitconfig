@@ -25,6 +25,8 @@
 	added = yellow
 	changed = green
 	untracked = cyan
+[diff]
+	algorithm = patience
 [mergetool "diffmerge"]
 	cmd = diffmerge --merge --result=$MERGED $LOCAL $BASE $REMOTE
 	trustExitCode = false
@@ -35,6 +37,6 @@
 	prompt = false
 	keepBackup = false
 [mergetool "p4merge"]
-  path = /usr/local/bin/p4merge
+	path = /usr/local/bin/p4merge
 [credential]
-    helper = osxkeychain
+	helper = osxkeychain
