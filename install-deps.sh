@@ -20,6 +20,9 @@ curl https://raw.github.com/rupa/z/master/z.sh > ~/code/z/z.sh
 chmod +x ~/code/z/z.sh
 # also consider moving over your current .z file if possible. it's painful to rebuild :)
 
+# add git-completion.bash to home dir
+curl https://raw.github.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bas
+
 # add this to the bash_profile file if it aint there.
 #   . ~/code/z/z.sh
 
