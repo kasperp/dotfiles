@@ -32,3 +32,6 @@ unzip -qq -j -d /tmp /tmp/adobe-sourcecode.zip "*.ttf"
 sudo mv /tmp/SourceCodePro-*.ttf /Library/Fonts
 rm /tmp/adobe-sourcecode.zip
 echo " + SourceCode Pro Font was installed"
+
+# download git-completion for git auto-complete in bash
+curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
