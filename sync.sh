@@ -4,11 +4,6 @@ git pull
 function doIt() {
   # sync dotfiles to ~
   rsync --exclude ".git/" --exclude ".DS_Store" --exclude "sync.sh" --exclude "readme.md" -av . ~
-
-  # sync sublime settings
-  cd subl
-  rsync -av . ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
-  cd ..
 }
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
   doIt
