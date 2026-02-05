@@ -8,7 +8,7 @@
 .docker/config.json
 
 # Local machine-specific config
-.config/zsh/local.zsh
+.config/zsh/00-local.zsh
 
 # Local state
 .zsh_history
