@@ -9,9 +9,9 @@ alias lt='ls --tree --level=3'
 # Shell
 alias reload='source ~/.zshrc'
 
-# Remote development (REMOTE_HOST set in local.zsh)
-alias scode='code --new-window --remote ssh-remote+${USER}@${REMOTE_HOST}'
-alias scursor='cursor --new-window --remote ssh-remote+${USER}@${REMOTE_HOST}'
+# Remote development (connects to this machine from local VS Code/Cursor)
+alias scode='code --new-window --remote ssh-remote+${USER}@$(hostname -I | awk "{print \$1}")'
+alias scursor='cursor --new-window --remote ssh-remote+${USER}@$(hostname -I | awk "{print \$1}")'
 
 # Tools
 alias proc=btop
