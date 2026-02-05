@@ -7,6 +7,9 @@
 .npmrc
 .docker/config.json
 
+# Local machine-specific config
+.config/zsh/local.zsh
+
 # Local state
 .zsh_history
 .bash_history
