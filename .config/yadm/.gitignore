@@ -1,0 +1,14 @@
+# Secrets - never commit these
+.config/jira/.env
+.ssh/
+.gnupg/
+
+# Credentials
+.npmrc
+.docker/config.json
+
+# Local state
+.zsh_history
+.bash_history
+.viminfo
+.lesshst

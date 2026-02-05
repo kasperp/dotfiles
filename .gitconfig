@@ -1,0 +1,30 @@
+[user]
+	email = 481303+kasperp@users.noreply.github.com
+	name = Kasper Bøgebjerg Pedersen
+[credential]
+	helper = cache
+[merge]
+    tool = vscode
+[mergetool "vscode"]
+    cmd = code --wait $MERGED
+[diff]
+    tool = vscode
+[difftool "vscode"]
+    cmd = code --wait --diff $LOCAL $REMOTE
+[rerere]
+	enable = true
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate
+[alias]
+	pushf = push --force-with-lease
+	rebase-branch = "!f() { git rebase -i $(git merge-base main HEAD); }; f"
+	recent-branches = !git for-each-ref --sort=-committerdate --format=\"%(committerdate:relative)  %(refname:short)\" refs/heads/ | head -10
+	rbranch = !git for-each-ref --sort=-committerdate --format=\"%(committerdate:relative)  %(refname:short)\" refs/heads/ | head -10
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
